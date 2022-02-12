@@ -8,7 +8,12 @@ var intervalID = -1;
 var username = [];
 
 // 行きたい場所を配列にぶち込む
-usernameA = ["Aさん","Bさん","cさん","dさん","Eさん","Fさん","Gさん","Hさん","Iさん","Jさん","Kさん","Lさん","Mさん","Nさん"];
+usernameA = ["じゃがいもさん 【@potatotippusu】",
+    "😊 【@vNZrS6uc0h0U5ju】",
+    "コグマ♂さん 【@ycor3XaS2USqqpM】",
+    "だいふくさん 【@p0e6MFlFtN4ziMo】",
+    "junshinさん 【youtube】"
+    ];
 
 // スタートボタンを押したときの処理
 function clickedStartA() {
@@ -18,7 +23,7 @@ function clickedStartA() {
     intervalID = setInterval(function() {
         if(isStart === true) {
             result = usernameA[Math.floor( Math.random() * usernameA.length )];
-            roulette.className = 'name';
+            roulette.className = 'name roulette';
             document.getElementById("winA").innerHTML = result;
         }
     }, 10);
@@ -34,7 +39,7 @@ function clickedStopA() {
         alert("スタートボタンを押してからストップボタンを押してね！");
     } else {
 // 結果を画面に表示
-    roulette.className = 'name';
+    roulette.className = 'name roulette';
     document.getElementById("winA").innerHTML = result;
     }
 }
@@ -43,7 +48,11 @@ function clickedStopA() {
 var startBtn = document.getElementById('startB');
 var roulette = document.getElementById('rouletteB');
 
-usernameB = ["A男","B男","c男","d男","E男","F男","G男","H男","I男","J男","K男","L男","M男","N男"];
+usernameB = ["てんちょさん 【@DUiaKiond3eAHJm】",
+    "やぎさん 【@yagi_yochan】",
+    "まささん 【@masagoma55】",
+    "まいさん 【@happinesS__1022 】",
+    "こたさん 【@3fZfVxNUbKiYrn8】"];
 
 function clickedStartB() {
     'use strict';
@@ -52,7 +61,7 @@ function clickedStartB() {
     intervalID = setInterval(function() {
         if(isStart === true) {
             result = usernameB[Math.floor( Math.random() * usernameB.length )];
-            roulette.className = 'name';
+            roulette.className = 'name roulette';
             document.getElementById("winB").innerHTML = result;
         }
     }, 10);
@@ -67,7 +76,7 @@ function clickedStopB() {
         alert("スタートボタンを押してからストップボタンを押してね！");
     } else {
         
-    roulette.className = 'name';
+    roulette.className = 'name roulette';
     document.getElementById("winB").innerHTML = result;
     }
 }
@@ -75,7 +84,8 @@ function clickedStopB() {
 var startBtn = document.getElementById('startC');
 var roulette = document.getElementById('rouletteC');
 
-usernameC = ["A子","B子","c子","d子","E子","F子","G子","H子","I子","J子","K子","L子","M子","N子"];
+usernameC = ["れんさん 【@curegedaisuki】",
+    "yskさん【@yskusk】"];
 
 function clickedStartC() {
     'use strict';
@@ -84,7 +94,7 @@ function clickedStartC() {
     intervalID = setInterval(function() {
         if(isStart === true) {
             result = usernameC[Math.floor( Math.random() * usernameC.length )];
-            roulette.className = 'name';
+            roulette.className = 'name roulette';
             document.getElementById("winC").innerHTML = result;
         }
     }, 10);
@@ -99,7 +109,7 @@ function clickedStopC() {
         alert("スタートボタンを押してからストップボタンを押してね！");
     } else {
 
-    roulette.className = 'name';
+    roulette.className = 'name roulette';
     document.getElementById("winC").innerHTML = result;
     }
 }
