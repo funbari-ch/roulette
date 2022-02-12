@@ -24,6 +24,10 @@ img{
     text-align: center;
     margin-bottom: 40px;
 }
+.roulette{
+    padding-top: 20px;
+    height: 160px;
+}
 .win{
     font-size: 32px;
 }
