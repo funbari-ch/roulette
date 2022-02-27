@@ -8,11 +8,77 @@ var intervalID = -1;
 var username = [];
 
 // 行きたい場所を配列にぶち込む
-usernameA = ["じゃがいもさん 【@potatotippusu】",
-    "😊 【@vNZrS6uc0h0U5ju】",
-    "コグマ♂さん 【@ycor3XaS2USqqpM】",
-    "だいふくさん 【@p0e6MFlFtN4ziMo】",
-    "junshinさん 【youtube】"
+usernameA = [
+    "やまぴん","やまぴん",
+    "しゃん🌕🐴","しゃん🌕🐴",
+    "むらーーん","むらーーん",
+    "😊","😊",
+    "TKG","TKG",
+    "ともちゃん🍢","ともちゃん🍢",
+    "マチカネタンホイザしか勝たん","マチカネタンホイザしか勝たん",
+    "破壊玉子","破壊玉子",
+    "ねんてぃん",
+    "ねんてぃん",
+    "ミィ🐴🌕🐟🍢🐧🍀🐼🐭",
+    "ミィ🐴🌕🐟🍢🐧🍀🐼🐭",
+    "進撃のまーる。",
+    "進撃のまーる。",
+    "コナYAMAカンパニー社長",
+    "コナYAMAカンパニー社長",
+    "こた！",
+    "こた！",
+    "あむっさん",
+    "あむっさん",
+    "てんてん",
+    "てんてん",
+    "だいふく",
+    "だいふく",
+    "こんちゃん@フォロバ100",
+    "こんちゃん@フォロバ100",
+    "おしるこ🍢",
+    "おしるこ🍢",
+    "コグマ♂🐮",
+    "コグマ♂🐮",
+    "クレーンげっちゃんねる",
+    "クレーンげっちゃんねる",
+    "awww",
+    "awww",
+    "廣瀬海人",
+    "廣瀬海人",
+    "ak",
+    "ak",
+    "𝕊𝕒𝕒𝕪𝕒🦋",
+    "𝕊𝕒𝕒𝕪𝕒🦋",
+    "ぱむ",
+    "ぱむ",
+    "げんまい",
+    "げんまい",
+    "てんちょ",
+    "てんちょ",
+    "はちやの固ツイみてね",
+    "はちやの固ツイみてね",
+    "やぎ",
+    "やぎ",
+    "桃兎",
+    "桃兎",
+    "YSK",
+    "YSK",
+    "サカキ",
+    "サカキ",
+    "バルス",
+    "バルス",
+    "悠里",
+    "悠里",
+    "shishitaka",
+    "shishitaka",
+    " ㌧㌧＼_(･ω･ )",
+    "にし",
+    "🐾 リト 🌧",
+    "ﾁﾋﾞﾏﾐ",
+    "イケメンに転生したい",
+    "パラコンダッタ",
+    "なつき",
+    
     ];
 
 // スタートボタンを押したときの処理
@@ -44,73 +110,73 @@ function clickedStopA() {
     }
 }
 
-// Bセット
-var startBtn = document.getElementById('startB');
-var roulette = document.getElementById('rouletteB');
+// // Bセット
+// var startBtn = document.getElementById('startB');
+// var roulette = document.getElementById('rouletteB');
 
-usernameB = ["てんちょさん 【@DUiaKiond3eAHJm】",
-    "やぎさん 【@yagi_yochan】",
-    "まささん 【@masagoma55】",
-    "まいさん 【@happinesS__1022 】",
-    "こたさん 【@3fZfVxNUbKiYrn8】"];
+// usernameB = ["てんちょさん 【@DUiaKiond3eAHJm】",
+//     "やぎさん 【@yagi_yochan】",
+//     "まささん 【@masagoma55】",
+//     "まいさん 【@happinesS__1022 】",
+//     "こたさん 【@3fZfVxNUbKiYrn8】"];
 
-function clickedStartB() {
-    'use strict';
-    isStart = true;
-    startBtn.disabled = true;
-    intervalID = setInterval(function() {
-        if(isStart === true) {
-            result = usernameB[Math.floor( Math.random() * usernameB.length )];
-            roulette.className = 'name roulette';
-            document.getElementById("winB").innerHTML = result;
-        }
-    }, 10);
-}
+// function clickedStartB() {
+//     'use strict';
+//     isStart = true;
+//     startBtn.disabled = true;
+//     intervalID = setInterval(function() {
+//         if(isStart === true) {
+//             result = usernameB[Math.floor( Math.random() * usernameB.length )];
+//             roulette.className = 'name roulette';
+//             document.getElementById("winB").innerHTML = result;
+//         }
+//     }, 10);
+// }
 
-function clickedStopB() {
-    'use strict';
-    clearTimeout(intervalID);
-    startBtn.disabled = "";
-    isStart = false;
-    if(result === '') {
-        alert("スタートボタンを押してからストップボタンを押してね！");
-    } else {
+// function clickedStopB() {
+//     'use strict';
+//     clearTimeout(intervalID);
+//     startBtn.disabled = "";
+//     isStart = false;
+//     if(result === '') {
+//         alert("スタートボタンを押してからストップボタンを押してね！");
+//     } else {
         
-    roulette.className = 'name roulette';
-    document.getElementById("winB").innerHTML = result;
-    }
-}
-// Cセット
-var startBtn = document.getElementById('startC');
-var roulette = document.getElementById('rouletteC');
+//     roulette.className = 'name roulette';
+//     document.getElementById("winB").innerHTML = result;
+//     }
+// }
+// // Cセット
+// var startBtn = document.getElementById('startC');
+// var roulette = document.getElementById('rouletteC');
 
-usernameC = ["れんさん 【@curegedaisuki】",
-    "yskさん【@yskusk】"];
+// usernameC = ["れんさん 【@curegedaisuki】",
+//     "yskさん【@yskusk】"];
 
-function clickedStartC() {
-    'use strict';
-    isStart = true;
-    startBtn.disabled = true;
-    intervalID = setInterval(function() {
-        if(isStart === true) {
-            result = usernameC[Math.floor( Math.random() * usernameC.length )];
-            roulette.className = 'name roulette';
-            document.getElementById("winC").innerHTML = result;
-        }
-    }, 10);
-}
+//     function clickedStartC() {
+//         'use strict';
+//         isStart = true;
+//         startBtn.disabled = true;
+//         intervalID = setInterval(function() {
+//             if(isStart === true) {
+//                 result = usernameC[Math.floor( Math.random() * usernameC.length )];
+//                 roulette.className = 'name roulette';
+//                 document.getElementById("winC").innerHTML = result;
+//             }
+//         }, 10);
+//     }
 
-function clickedStopC() {
-    'use strict';
-    clearTimeout(intervalID);
-    startBtn.disabled = "";
-    isStart = false;
-    if(result === '') {
-        alert("スタートボタンを押してからストップボタンを押してね！");
-    } else {
+// function clickedStopC() {
+//     'use strict';
+//     clearTimeout(intervalID);
+//     startBtn.disabled = "";
+//     isStart = false;
+//     if(result === '') {
+//         alert("スタートボタンを押してからストップボタンを押してね！");
+//     } else {
 
-    roulette.className = 'name roulette';
-    document.getElementById("winC").innerHTML = result;
-    }
-}
+//     roulette.className = 'name roulette';
+//     document.getElementById("winC").innerHTML = result;
+//     }
+// }
 
